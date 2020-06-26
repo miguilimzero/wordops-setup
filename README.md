@@ -1,4 +1,5 @@
 # wordops-setup
+This project is an automated script to install WordOps and deploy a web server faster. It also adds a dropbox script since wordops has no backup method.
 
 ### WordOps Installs
 
