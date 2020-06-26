@@ -1,5 +1,11 @@
 # wordops-setup
 
+Reset username and password after setup:
+
+```sh
+wo secure --auth
+```
+
 Setup with cloudflare:
 
 ```sh
@@ -11,10 +17,4 @@ Create website with cloudflare SSL `(Domain must already be pointed to IP before
 
 ```sh
 sudo wo site create site.tld --php74 --mysql --letsencrypt=wildcard --dns=dns_cf
-```
-
-Reset username and password after setup:
-
-```sh
-wo secure --auth
 ```
