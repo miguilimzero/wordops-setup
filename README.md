@@ -12,6 +12,7 @@ Wordops Documentation: https://docs.wordops.net/getting-started/prerequesites/
  
 ### Other Installs
 
+ - Node.js 10.x
  - Supervisor
  - Dropbox Script
 
