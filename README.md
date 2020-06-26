@@ -11,6 +11,7 @@
 
  - Crontab
  - Supervisor
+ - Dropbox Script
 
 ### Setup Guide
 
