@@ -71,4 +71,4 @@ chmod -R 775 storage
 chmod -R 775 bootstrap/cache
 ```
 
-> Remember to set database host on *.env* file as `localhost` and do not use `127.0.0.1`.
+> Remember to set database host on *.env* file as `localhost` instead of `127.0.0.1`.
