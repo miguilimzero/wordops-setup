@@ -23,3 +23,4 @@ sudo systemctl enable cron
 # Dropbox
 mkdir /root/dropbox/
 curl "https://raw.githubusercontent.com/andreafabrizi/Dropbox-Uploader/master/dropbox_uploader.sh" -o /root/dropbox/dropbox_uploader.sh
+chmod +x /root/dropbox/dropbox_uploader.sh
