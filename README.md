@@ -61,7 +61,7 @@ Database backup Cron example:
 
 ### Permission Guide
 
-Common permission commands to fix files permission `(Laravel folders)`
+Common permission commands to fix files permission `(Laravel folders)`:
 
 ```sh
 sudo chown -R $USER:www-data storage
