@@ -8,15 +8,17 @@ sudo wo stack install --ufw
 sudo wo stack install --fail2ban
 sudo wo stack install --sendmail
 
-sudo apt-get install supervisor -y
-sudo service supervisor restart
-
-sudo apt-get install cron -y
-sudo systemctl enable cron
-
 # Config
 sudo ufw allow 22,80,443,22222/tcp
 sudo ufw enable
+
+# Supervisor
+sudo apt-get install supervisor -y
+sudo service supervisor restart
+
+# Cron
+sudo apt-get install cron -y
+sudo systemctl enable cron
 
 # Duplicati
 wget https://updates.duplicati.com/beta/duplicati_2.0.5.1-1_all.deb
@@ -39,3 +41,5 @@ Restart=always
 
 [Install]
 WantedBy=multi-user.target' > /lib/systemd/system/duplicati.service
+
+sudo service duplicati start
