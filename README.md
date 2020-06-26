@@ -1,6 +1,8 @@
 # WordOps Setup
 This project is an automated script to install WordOps and deploy a web server faster. It also adds a dropbox script since wordops has no backup method.
 
+Wordops Documentation: https://docs.wordops.net/getting-started/prerequesites/
+
 ### WordOps Installs
 
  - Base Stack
