@@ -9,8 +9,8 @@
  
 ### Other Installs
 
- - Supervisor
  - Crontab
+ - Supervisor
 
 ### Setup Guide
 
