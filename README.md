@@ -6,7 +6,7 @@ Reset username and password after setup:
 wo secure --auth
 ```
 
-Setup with cloudflare:
+Setup cloudflare keys to validate SSL:
 
 ```sh
 export CF_Key=""
