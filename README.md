@@ -39,5 +39,19 @@ export CF_Email=""
 Create website with Cloudflare SSL `(Domain must already be pointed to IP before executing this command)`:
 
 ```sh
-sudo wo site create site.tld --php74 --mysql --letsencrypt=wildcard --dns=dns_cf
+wo site create site.tld --php74 --mysql --letsencrypt=wildcard --dns=dns_cf
+```
+
+### Dropbox Guide
+
+Setup Dropbox access token:
+
+```sh
+bash /root/dropbox/dropbox_uploader.sh
+```
+
+Database Cron example:
+
+```sh
+0 * * * * cd /root/dropbox/ && mysqldump wordpress > wordpress-$(date +%Y-%m-%d-%H-00-00).sql && bash dropbox_uploader.sh upload wordpress-$(date +%Y-%m-%d-%H-00-00).sql /wordpress
 ```
