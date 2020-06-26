@@ -16,7 +16,7 @@ This project is an automated script to install WordOps and deploy a web server f
 
 ### Setup Guide
 
-Execute script `(WordOps will ask you some informations about Git and Dropbox will ask you an access token)`:
+Execute script `(WordOps will ask you some informations about Git)`:
 
 ```sh
 wget -qO wos https://raw.githubusercontent.com/srdante/wordops-setup/master/setup.sh && sudo bash wos
@@ -40,7 +40,7 @@ export CF_Email=""
 Create website with Cloudflare SSL `(Domain must already be pointed to IP before executing this command)`:
 
 ```sh
-wo site create site.tld --php74 --mysql --letsencrypt=wildcard --dns=dns_cf
+wo site create example.com --php74 --mysql --letsencrypt=wildcard --dns=dns_cf
 ```
 
 ### Dropbox Guide
