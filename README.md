@@ -53,7 +53,7 @@ Setup Dropbox access token:
 bash /root/dropbox/dropbox_uploader.sh
 ```
 
-Database Cron example:
+Database backup Cron example:
 
 ```sh
 0 * * * * cd /root/dropbox/ && mysqldump wordpress > wordpress-$(date +%Y-%m-%d-%H-00-00).sql && bash dropbox_uploader.sh upload wordpress-$(date +%Y-%m-%d-%H-00-00).sql /wordpress
