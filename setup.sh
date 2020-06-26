@@ -10,6 +10,7 @@ sudo wo stack install --sendmail
 
 # Install gmp extension
 sudo apt-get install php7.4-gmp
+echo "extension=gmp.so" > /etc/php/7.4/cli/conf.d/gmp.ini
 
 # Install node.js 10.x
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
