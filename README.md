@@ -22,7 +22,7 @@ Execute script `(WordOps will ask you some informations about Git)`:
 wget -qO wos https://raw.githubusercontent.com/srdante/wordops-setup/master/setup.sh && sudo bash wos
 ```
 
-Reset username and password after setup:
+Reset WordOps username and password after setup:
 
 ```sh
 wo secure --auth
