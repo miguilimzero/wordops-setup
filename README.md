@@ -12,13 +12,12 @@ Wordops Documentation: https://docs.wordops.net/getting-started/prerequesites/
  
 ### Other Installs
 
- - Crontab
  - Supervisor
  - Dropbox Script
 
 ### Setup Guide
 
-Execute script `(WordOps will ask you some informations about Git)`:
+Execute script `(WordOps will ask you some informations about Git and Ufw will ask for firewall rule confirmation)`:
 
 ```sh
 wget -qO wos https://raw.githubusercontent.com/srdante/wordops-setup/master/setup.sh && sudo bash wos
