@@ -58,3 +58,12 @@ Database backup Cron example:
 ```sh
 0 * * * * cd /root/dropbox/ && mysqldump wordpress > wordpress-$(date +%Y-%m-%d-%H-00-00).sql && bash dropbox_uploader.sh upload wordpress-$(date +%Y-%m-%d-%H-00-00).sql /wordpress
 ```
+
+### Permission Guide
+
+Common permission commands to fix files permission `(Laravel folders)`
+
+```sh
+sudo chown -R $USER:www-data storage
+sudo chown -R $USER:www-data bootstrap/cache
+```
