@@ -1,5 +1,11 @@
 # wordops-setup
 
+Execute Setup (WordOps will ask you some informations about Git and Dropbox will ask you an access token):
+
+```sh
+wget -qO wos https://raw.githubusercontent.com/srdante/wordops-setup/master/setup.sh && sudo bash wos
+```
+
 Reset username and password after setup:
 
 ```sh
