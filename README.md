@@ -1,6 +1,20 @@
 # wordops-setup
 
-Execute Setup `(WordOps will ask you some informations about Git and Dropbox will ask you an access token)`:
+### WordOps Installs
+
+ - Base Stack
+ - Ufw Stack
+ - Fail2ban Stack
+ - Sendmail Stack
+ 
+### Other Installs
+
+ - Supervisor
+ - Crontab
+
+### Setup Guide
+
+Execute script `(WordOps will ask you some informations about Git and Dropbox will ask you an access token)`:
 
 ```sh
 wget -qO wos https://raw.githubusercontent.com/srdante/wordops-setup/master/setup.sh && sudo bash wos
@@ -11,6 +25,8 @@ Reset username and password after setup:
 ```sh
 wo secure --auth
 ```
+
+### Cloudflare Guide
 
 Setup Cloudflare keys to validate SSL:
 
