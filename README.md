@@ -56,7 +56,7 @@ bash /root/dropbox/dropbox_uploader.sh
 Database backup Cron example:
 
 ```sh
-0 * * * * cd /root/dropbox/ && mysqldump wordpress > wordpress-$(date +%Y-%m-%d-%H-00-00).sql && bash dropbox_uploader.sh upload wordpress-$(date +%Y-%m-%d-%H-00-00).sql /wordpress
+0 * * * * mysqldump wordpress > /root/dropbox/wordpress-$(date +%Y-%m-%d-%H-00-00).sql && bash dropbox_uploader.sh upload /root/dropbox/wordpress-$(date +%Y-%m-%d-%H-00-00).sql /wordpress
 ```
 
 ### Permission Guide
